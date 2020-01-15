@@ -65,16 +65,16 @@
 		</helpers>
 	</global>
 	<adminhtml>
-	<events>
-		<core_block_abstract_prepare_layout_before>
-			<observers>
-				<priceadjust_core_block_abstract_prepare_layout_before>
-					<class>priceadjust/observer</class>
-					<method>addMassAction</method>
-				</priceadjust_core_block_abstract_prepare_layout_before>
-			</observers>
-		</core_block_abstract_prepare_layout_before>
-	</events>
+		<events>
+			<core_block_abstract_prepare_layout_before>
+				<observers>
+					<priceadjust_core_block_abstract_prepare_layout_before>
+						<class>priceadjust/observer</class>
+						<method>addMassAction</method>
+					</priceadjust_core_block_abstract_prepare_layout_before>
+				</observers>
+			</core_block_abstract_prepare_layout_before>
+		</events>
 		<layout>
 			<updates>
 				<priceadjust>
@@ -82,5 +82,14 @@
 				</priceadjust>
 			</updates>
 		</layout>
+		<translate>
+            <modules>
+                <priceadjust>
+                    <files>
+                        <default>MagnifyStudio_PriceAdjust.csv</default>
+                    </files>
+                </priceadjust>
+            </modules>
+        </translate>
 	</adminhtml>
 </config>

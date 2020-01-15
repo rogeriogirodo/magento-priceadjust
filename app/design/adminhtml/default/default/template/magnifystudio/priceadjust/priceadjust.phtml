@@ -83,7 +83,7 @@
 		</div>
 	</div>
 
-	<p><?php echo __('Price is derived from the corresponding product within the "Source" site. The first rule the weight falls between, the price is multiplied against the "Multiple" and set as the price of the product at the "Target" site. If the product doesn\'t exist at either the target or source site, the adjustment is not applied. Also, if the weight is not found within the rules, the adjustment is not applied.'); ?></p><br />
+	<p><?php echo __('Price is derived from the corresponding product within the <b>Source</b> site. The first rule the weight falls between, the price is multiplied against the <b>Multiple</b> and set as the price of the product at the <b>Target</b> site. If the product does not exist at either the target or source site, the adjustment is not applied. Also, if the weight is not found within the rules, the adjustment is not applied.'); ?></p><br />
 
 	<div class="box-left">
 
@@ -170,10 +170,10 @@
 							<td><input class="input-text number-title required-entry" type="text" name="rules[__index__][weight_end]" id="rule_weight_end__index__" value="" disabled="disabled" /></td>
 							<td>
 								 <select class="required-entry" name="rules[__index__][type]" id="rule_type__index__" disabled="disabled">
-								 	<option value="0" selected>Multiply</option>
-								 	<option value="1">Addition</option>
-								 	<option value="2">Subtract</option>
-								 	<option value="3">Divide</option>
+								 	<option value="0" selected><?php echo __('Multiply'); ?></option>
+								 	<option value="1"><?php echo __('Addition'); ?></option>
+								 	<option value="2"><?php echo __('Subtract'); ?></option>
+								 	<option value="3"><?php echo __('Divide'); ?></option>
 								 </select>
 							</td>
 							<td><input class="input-text number-title required-entry" type="text" name="rules[__index__][value]" id="rule_value__index__" value="" disabled="disabled" /></td>

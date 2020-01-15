@@ -17,7 +17,7 @@ class MagnifyStudio_PriceAdjust_Model_Observer
 			&& $block->getRequest()->getControllerName() == 'catalog_product')
 		{
 			$block->addItem('priceadjust', array(
-				'label'	=> 'Price Adjust',
+				'label'	=> __('Price Adjust'),
 				'url'	=> Mage::app()->getStore()->getUrl('priceadjust/adjust/price'),
 			));
 		}
