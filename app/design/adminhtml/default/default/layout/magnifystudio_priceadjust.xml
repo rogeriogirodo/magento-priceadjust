@@ -1,8 +1,9 @@
 <?xml version="1.0"?>
-<layout>
-	<priceadjust_adjust_price>
+<layout version="1.0.0">
+	<priceadjust_adminhtml_priceadjust_index>
+		<update handle="priceadjust_priceadjust_index"/>
 		<reference name="content">
-			<block type="core/template" name="priceadjust" template="magnifystudio/priceadjust/priceadjust.phtml" />
+			<block type="adminhtml/template" name="priceadjust" template="magnifystudio/priceadjust/priceadjust.phtml" />
 		</reference>
-	</priceadjust_adjust_price>
+	</priceadjust_adminhtml_priceadjust_index>
 </layout>

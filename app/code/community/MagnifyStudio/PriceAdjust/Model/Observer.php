@@ -18,7 +18,8 @@ class MagnifyStudio_PriceAdjust_Model_Observer
 		{
 			$block->addItem('priceadjust', array(
 				'label'	=> __('Price Adjust'),
-				'url'	=> Mage::app()->getStore()->getUrl('priceadjust/adjust/price'),
+				//'url'	=> Mage::app()->getStore()->getUrl('priceadjust/adjust/price'),
+				'url' => Mage::helper("adminhtml")->getUrl("/adminhtml_priceadjust")
 			));
 		}
 	}

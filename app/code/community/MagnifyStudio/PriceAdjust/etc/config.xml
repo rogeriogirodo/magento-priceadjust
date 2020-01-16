@@ -7,17 +7,11 @@
 	</modules>
 	<admin>
 		<routers>
-			<priceadjust>
-				<use>admin</use>
-				<args>
-					<module>MagnifyStudio_PriceAdjust</module>
-					<frontName>priceadjust</frontName>
-				</args>
-			</priceadjust>
 			<adminhtml>
 				<args>
 					<modules>
-						<MagnifyStudio_PriceAdjust before="Mage_Adminhtml">MagnifyStudio_PriceAdjust</MagnifyStudio_PriceAdjust>
+						<priceadjust after="Mage_Adminhtml">MagnifyStudio_PriceAdjust</priceadjust>
+						<frontName>priceadjust</frontName>
 					</modules>
 				</args>
 			</adminhtml>
@@ -65,6 +59,21 @@
 		</helpers>
 	</global>
 	<adminhtml>
+        <acl>
+            <resources>
+                <all>
+                    <title>Allow Everything</title>
+                </all>
+                <admin>
+                    <children>
+                        <priceadjust translate="title" module="priceadjust">
+                            <title>PriceAdjust Module</title>
+                            <sort_order>10</sort_order>
+                        </priceadjust>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
 		<events>
 			<core_block_abstract_prepare_layout_before>
 				<observers>
